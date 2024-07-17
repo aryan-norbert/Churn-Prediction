@@ -1,86 +1,15 @@
-# Telco Customer Churn Prediction
+# Earthquake Data Analysis Project
 
-This project aims to predict customer churn for a telecommunications company using machine learning models. The dataset is sourced from Kaggle and includes customer details such as tenure, service usage, and charges. The project involves data preprocessing, model training, evaluation, and visualization of key insights.
+This project analyzes global earthquake data obtained from the US Geological Survey (USGS) using data visualization techniques to gain insights into seismic activity patterns.
 
-## Project Structure
+### Methodology:
+1. **Data Visualization**: The project utilizes Python libraries such as Pandas for data manipulation and Matplotlib, Seaborn, and Plotly for visualizing earthquake occurrences. Visualizations include time series plots of earthquake frequency, geographical maps pinpointing epicenters, and statistical charts (e.g., histograms, box plots) to analyze earthquake magnitude distributions.
 
-- `data/`: Contains the dataset.
-- `notebooks/`: Jupyter Notebook for data analysis and model training.
-- `src/`: Python scripts for data preprocessing, model training, evaluation, and visualization.
-- `models/`: Directory to store the trained models.
-- `requirements.txt`: List of dependencies.
-- `README.md`: Project overview and instructions.
+2. **Insights Generation**: Analysis involves identifying regions prone to seismic activity, correlating earthquake magnitude with geographical features, and detecting temporal patterns in earthquake occurrence.
 
-## Setup Instructions
-
-1. **Clone the repository:**
-
-    ```sh
-    git clone https://github.com/your-username/telco-churn-prediction.git
-    cd telco-churn-prediction
-    ```
-
-2. **Create a virtual environment and activate it:**
-
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install the dependencies:**
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. **Download the dataset using Kaggle API:**
-
-    ```sh
-    kaggle datasets download -d blastchar/telco-customer-churn
-    ```
-
-5. **Unzip the downloaded file:**
-
-    ```python
-    import zipfile
-    with zipfile.ZipFile("telco-customer-churn.zip", 'r') as zip_ref:
-        zip_ref.extractall(".")
-    ```
-
-6. **Run the data preprocessing and model training script:**
-
-    ```sh
-    python src/preprocess_and_train.py
-    ```
-
-## Key Features
-
-1. **Data Preprocessing**:
-    - Downloading and unzipping the dataset.
-    - Handling missing values and encoding categorical variables.
-    - Scaling numerical features.
-
-2. **Model Training**:
-    - Splitting the dataset into training and testing sets.
-    - Training a Random Forest Classifier.
-    - Evaluating the model using classification reports and ROC AUC score.
-
-3. **Visualization and Insights**:
-    - Plotting feature importances.
-    - Creating a correlation matrix to understand feature relationships.
-
-## Usage
-
-1. **Run the model training script** to preprocess data, train the model, and evaluate its performance:
-
-    ```sh
-    python src/preprocess_and_train.py
-    ```
-
-2. **Visualize the results**:
-    - Feature importances bar plot.
-    - Correlation matrix heatmap.
-
-## License
-
-This project is licensed under the MIT License.
+### Libraries Used:
+- Python 3.x
+- Pandas: Data manipulation and preprocessing.
+- Matplotlib: Basic plotting and visualization.
+- Seaborn: Statistical data visualization.
+- Plotly: Interactive visualization for maps and charts.
